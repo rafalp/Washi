@@ -1,1 +1,24 @@
-Hello, this is placeholder page for Washi preview.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Washi Editor Demo</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="container">
+        <h1>Washi Editor Playground</h1>
+        <p>Just tiny experiment in making editor using <a href="https://prosemirror.net/" target="_blank">ProseMirror</a> and inspired by Medium.</p>
+      </div>
+    </div>
+    <div id="editable" class="container lead">
+    </div>
+    <script src="/dist/washi.js"></script>
+    <script type="text/javascript">
+      window.editor = new Washi.mount(document.getElementById('editable'))
+    </script>
+  </body>
+</html>
